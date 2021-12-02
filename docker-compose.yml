@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+    bind:
+        build: .
+        container_name: bind
+        ports:
+            - 54:53/tcp
+            - 54:53/udp
+        # if you want to modify the default config file you can modify and mount it
+        #volumes:
+        #    - ./config/named.conf:/etc/bind/named.conf
