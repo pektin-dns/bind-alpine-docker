@@ -8,7 +8,7 @@ include:
 image: alpine
 
 variables:
-    IMAGE_NAME: docs
+    IMAGE_NAME: bind-alpine-docker
 
 stages:
     - mirror
